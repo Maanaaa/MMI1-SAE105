@@ -48,7 +48,7 @@ nav {
     width: 100%;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
     height: 18vh;
 }
 
@@ -162,6 +162,17 @@ header > div > h1 {
     margin-top: -3vh;
     color: white;
     font-size: 0.8em;
+}
+
+#castleDiscovering{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+}
+
+#castleDiscovering > div > img{
+    width: 30%;
 }
 
 
