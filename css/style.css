@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins'; /*** Poppins ***/
+    max-width: 100%;
 }
 
 h1{
@@ -11,23 +12,71 @@ h1{
 
 /******* NAVBAR *******/
 
-nav{
-    width: 90%;
-
-    border: 1px solid black;
-}
-
-nav > ul{
+nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+    z-index: 2;
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    background: rgba(0, 0, 0, 0.1); /* 10% opaque black */
+    position: fixed;
+
 }
 
-li{
-    list-style-type: none;
+nav > img {
+    width: 180px;
+}
+
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: -180px;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+ 
+nav a{
     text-decoration: none;
+    color: white;
 }
 
-li > img{
-    width: 30%;
+/******* HEADER *******/
+
+header{
+    z-index: 1;
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/header_background.webp");
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
+}
+
+
+
+header > div{
+    position: absolute;
+    bottom: 0;
+}
+
+header > div > h1{
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    margin-left: 5vh;
 }
