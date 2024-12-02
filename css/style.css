@@ -128,14 +128,43 @@ footer{
     background-color: black;
     color: #ecf0f1;
     display: flex;
+    flex-direction: row;
     max-width: 100%;
     width: 100%;
+    justify-content: center;
 }
 
 footer li{
     list-style-type: none;
 }
 
-footer > div{
+footer > div{ 
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer img{
+    max-width: 100%;
+    margin-top: -8vh;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+footer .socialmedia{
+    display: flex;
+    flex-direction: row;
+}
+footer .socialmedia > li{
+    width: 20px;
+    height: 20px;
+    border-radius: 75px;
+    background-color: white;
+    margin: 10px;
 }
