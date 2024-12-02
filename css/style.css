@@ -77,19 +77,21 @@ nav a {
     text-decoration: none;
     color: white;
 }
+
     /******* MENU BURGER POUR TÉLÉPHONES *******/
+
 #hamburger {
     display: none;
 }
 
 #hamburger-label {
-    cursor: pointer;
     display: none; /* Invisible pour pouvoir l'afficher sur les petits écrans */
     color: #ecf0f1;
     font-size: 4.25vh;
     padding: 10px;
     position: relative;
-    z-index: 3;
+    z-index: 3; /* pour que mon burger soit au dessus des autres éléments en haut de ma page */
+    max-width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -97,7 +99,6 @@ nav a {
         display: block;
         position: absolute;
         right: 20%;
-
     }
 
     nav > div {
@@ -107,17 +108,20 @@ nav a {
         left: 0;
         flex-direction: column;
         align-items: center;
-        margin-left: 2.5vh;
         width: 100%;
         background: rgba(0, 0, 0, 0.1);
+        font-size: 2vh;
+        margin:0;
+        padding: 0;
     }
 
     #hamburger:checked + #hamburger-label + img + div {
         display: flex;
     }
 }
-
 /******* HEADER *******/
+
+
 header {
     z-index: 1;
     max-width: 100%;
@@ -140,6 +144,27 @@ header > div > h1 {
     margin-left: 8vh;
     margin-bottom: 10vh;
 }
+
+
+
+/****** MAIN, DÉCOUVERTE DU CHÂTEAU *****/
+.discoveringtransition{ /**** Div de transition entre le header et la première section du main ****/
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.discoveringtransition > button{ /**** Bouton CTA entre le header et la première section ****/
+    padding: 18px;
+    background-color: #d16d4e;
+    border: none;
+    border-radius: 25px;
+    margin-top: -3vh;
+    color: white;
+    font-size: 0.8em;
+}
+
+
 
 /******* FOOTER *******/
 footer{
