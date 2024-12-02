@@ -16,6 +16,24 @@ h2{
     font-size:1.875rem;
 }
 
+/****** PRPRIÉTÉS DE BASE ******/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    /*** Poppins ***/
+    max-width: 100%;
+}
+
+h1 {
+    /**** Montserrat ***/
+    font-family: 'Montserrat';
+    font-size: 2.125rem;
+}
+h2{
+    font-size:1.875rem;
+}
+
 
 
 /******* NAVBAR *******/
@@ -167,4 +185,16 @@ footer .socialmedia > li{
     border-radius: 75px;
     background-color: white;
     margin: 10px;
+}
+
+    /******* RESPONSIVE DU FOOTER *******/
+@media (max-width: 768px) {
+    footer > div:nth-child(2){
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    footer{
+        flex-direction: column;
+    }
 }
