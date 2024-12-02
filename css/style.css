@@ -1,45 +1,50 @@
 /****** PRPRIÉTÉS DE BASE ******/
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins'; /*** Poppins ***/
+    font-family: 'Poppins';
+    /*** Poppins ***/
     max-width: 100%;
 }
 
-h1{
+h1 {
     /**** Montserrat ***/
+    font-family: 'Montserrat';
+    font-size: 2.125rem;
+}
+h2{
+    font-size:1.875rem;
 }
 
-/******* NAVBAR *******/
 
+
+/******* NAVBAR *******/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     z-index: 2;
-    position: absolute;
+    position: fixed;
     max-width: 100%;
     width: 100%;
     text-transform: uppercase;
-    font-family: 'Montserrat';
-    background: rgba(0, 0, 0, 0.1); /* 10% opaque black */
-    position: fixed;
-
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(0, 0, 0, 0.1);
+    height: 18vh;
 }
 
 nav > img {
-    width: 180px;
+    width: 23vh;
 }
 
-.nav-container {
+nav > div {
     flex: 1;
     display: flex;
     justify-content: center;
-
 }
 
-.nav-links {
+nav > div ul {
     display: flex;
     list-style: none;
     padding: 0;
@@ -49,34 +54,87 @@ nav > img {
 .nav-links li {
     margin: 0 10px;
 }
- 
-nav a{
+
+nav a {
     text-decoration: none;
     color: white;
 }
+    /******* MENU BURGER POUR TÉLÉPHONES *******/
+#hamburger {
+    display: none;
+}
+
+#hamburger-label {
+    cursor: pointer;
+    display: none; /* Invisible pour pouvoir l'afficher sur les petits écrans */
+    color: #ecf0f1;
+    font-size: 4.25vh;
+    padding: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+    #hamburger-label {
+        display: block;
+        position: absolute;
+        right: 20%;
+
+    }
+
+    nav > div {
+        display: none;
+        position: absolute;
+        top: 18vh;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2.5vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    #hamburger:checked + #hamburger-label + img + div {
+        display: flex;
+    }
+}
 
 /******* HEADER *******/
-
-header{
+header {
     z-index: 1;
-    position: absolute;
     max-width: 100%;
     width: 100%;
     height: 100vh;
     background-image: url("../img/header_background.webp");
+    background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
 }
 
-
-
-header > div{
+header > div {
     position: absolute;
     bottom: 0;
 }
 
-header > div > h1{
+header > div > h1 {
     color: white;
-    font-size: 34px;
+    font-size: 4.25vh;
     font-weight: bold;
-    margin-left: 5vh;
+    margin-left: 8vh;
+    margin-bottom: 10vh;
+}
+
+/******* FOOTER *******/
+footer{
+    background-color: black;
+    color: #ecf0f1;
+    display: flex;
+    
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer > div{
+    flex-grow: 1;
 }
