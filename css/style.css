@@ -128,7 +128,8 @@ footer{
     background-color: black;
     color: #ecf0f1;
     display: flex;
-    
+    max-width: 100%;
+    width: 100%;
 }
 
 footer li{
