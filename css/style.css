@@ -126,7 +126,17 @@ nav a {
 }
 
 
-/******* PAGE D'ACCUEIL *******/
+/*******  **************
+ **************
+ **************
+ **************
+    **************
+    PAGE D'ACCUEIL  
+     **************
+ **************
+ **************
+ **************
+/*******  **************
 /**** HEADER *****/
 
 
@@ -192,9 +202,14 @@ header > div > h1 {
     max-width: 80%;
 }
 
-/** Section 2 **/
+/** Section 2 Carroussel **/
 
-
+#medieval{
+    width: 100%;
+    margin-top: 11vh;
+    display: flex;
+    justify-content: center;
+}
 
 
 
