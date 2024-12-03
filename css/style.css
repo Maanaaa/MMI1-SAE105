@@ -180,6 +180,7 @@ header > div > h1 {
 
 #castleDiscovering {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 70%;
     margin: 0 auto; /*** Centrer hrozontalement la section **/
@@ -188,7 +189,6 @@ header > div > h1 {
 
 #castleDiscovering > .flex-left{
     width: 40%;
-    align-items: center;
     display: flex;
     align-items: center;
 }
@@ -202,17 +202,34 @@ header > div > h1 {
     max-width: 80%;
 }
 
-/** Section 2 Carroussel **/
+/** Section 2 Carousel **/
 
 #medieval{
     width: 100%;
-    margin-top: 11vh;
+    margin-top: 15vh;
+    text-align: center;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
 }
 
+.galerie{
+    display: flex;
 
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: row;
+}
 
+.galerie img{
+    width: 45h;
+    height: 35vh;
+    padding: 1vh;
+    margin: 3vh
+}
 
 /**** PAGE ABCDEFF *****/
 
