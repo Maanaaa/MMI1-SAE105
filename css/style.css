@@ -124,7 +124,10 @@ nav a {
         display: flex;
     }
 }
-/******* HEADER *******/
+
+
+/******* PAGE D'ACCUEIL *******/
+/**** HEADER *****/
 
 
 header {
@@ -194,6 +197,9 @@ header > div > h1 {
 
 
 
+
+
+/**** PAGE ABCDEFF *****/
 
 /******* FOOTER *******/
 footer{
