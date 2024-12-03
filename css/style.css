@@ -20,6 +20,17 @@ p{
     font-size: 2.2vh;
 }
 
+.transition{
+    margin-top: 10vh;
+    height: 20vh;
+    position: relative;
+    background-image: url('../img/chateau_transition.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
     /***** BOUTONS *****/
 
 button{
@@ -53,7 +64,7 @@ nav {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     background: rgba(0, 0, 0, 0.2);
-    height: 15vh;
+    height: 12vh;
     font-size: 1.5vh;
 }
 
