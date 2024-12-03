@@ -44,30 +44,36 @@ button{
 .primary{ 
     background-color: #d16d4e;
     transition: all, 0.25s;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .primary:hover{
     background-color: #8daa91;
-    transform: scaleX(1.1);
+    transform: scaleX(1.05);
 }
 
 .secondary{
     background-color: #8daa91;
     transition: all, 0.25s;
     padding: 2.25vh;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .secondary:hover{
     background-color: #d16d4e;
-    transform: scaleY(1.1);
+    transform: scaleY(1.05);
 }
 
 .third{
     background-color: #d16d4e;
     padding: 2vh;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    transition: all, 0.25s;
+}
+
+.third:hover{
+    background-color: #8daa91;
+    transform: scaleX(1.01);
 }
 
 /******* NAVBAR *******/
@@ -248,7 +254,6 @@ header > div > h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
 
@@ -265,7 +270,13 @@ header > div > h1 {
     width: 45h;
     height: 35vh;
     padding: 1vh;
-    margin: 3vh
+    margin: 3vh;
+    transition: all, 0.25s;
+}
+
+.galerie > div:hover img{
+    transform: scale(1.1,1.1);
+    border-radius: 25px;
 }
 
 
@@ -316,7 +327,6 @@ header > div > h1 {
 .cards .card:hover{
     transform:scaleX(1.015);
     transform:scaleY(1.02);
-    transform: rotate(1.5)
 }
 
 /**** PAGE ABCDEFF *****/
