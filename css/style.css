@@ -32,7 +32,7 @@ a {
     margin-top: 10vh;
     height: 20vh;
     position: relative;
-    background-image: url('../img/chateau_transition.jpeg');
+    background-image: url('../img/photos_chateau/chateau_transition.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@ nav a:hover {
 /**** HEADER *****/
 
 .story_background{ /** Pour changer le fond selon la page **/
-    background-image: url("../img/header_background_story.jpg");
+    background-image: url("../img/header/background_story.webp");
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
 }
@@ -194,7 +194,7 @@ header {
     max-width: 100%;
     width: 100%;
     height: 100vh;
-    background-image: url("../img/header_background.webp");
+    background-image: url("../img/header/background_index.webp");
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
     /*** Trouvé sur W3School : Ombre intérieur du bas vers le haut avec 35% d'opacité dans le header pour que le texte sur l'image de fond de header soit lisible **/
