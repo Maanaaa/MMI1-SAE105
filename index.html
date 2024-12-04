@@ -11,22 +11,24 @@
     <script src="https://kit.fontawesome.com/fcb9a029a4.js" crossorigin="anonymous"></script>
     <title>L'époque médiévale au Château de La RocheLambert</title>
 </head>
+
 <body>
     <!---- Barre de navigation ---->
     <nav>
         <input type="checkbox" id="hamburger"> <!--- Formulaire pour le menu hamburger (pouvoir cliquer pour déplier)-->
-        <label for="hamburger" id="hamburger-label">=</label> <!-- Quand le label est en état checked, déplier les liens-->
+        <label for="hamburger" id="hamburger-label">=</label>
+        <!-- Quand le label est en état checked, déplier les liens-->
         <img src="img/logo_blanc.png" alt="Logo du Château de La RocheLambert">
         <div>
             <ul class="nav-links">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Histoire</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="story.html">Histoire</a></li>
                 <li><a href="#">Visiter</a></li>
                 <li><a href="#">Le Patrimoine Auvergnat</a></li>
             </ul>
         </div>
     </nav>
-        <!---- Header avec grande image de fond ---->
+    <!---- Header avec grande image de fond ---->
     <header>
         <div>
             <h1>Le Château de La RocheLambert,<br> à la découverte de l'époque médiévale</h1>
@@ -34,10 +36,10 @@
     </header>
     <main>
         <div class="discoveringtransition">
-            <a href="#"><button class="primary">Découvrir l'époque</button></a>
+            <a href="#events"><button class="primary">Les événements phares</button></a>
         </div>
-        <section id="castleDiscovering">
-            <div class="flex-left">  <!---- Côté gauche de ma section ---->
+        <section class="image-left-text-right">
+            <div class="flex-left"> <!---- Côté gauche de ma section ---->
                 <img src="img/entree_chateau.png" alt="Photo de l'entrée du château de La RocheLambert">
             </div>
             <div class="flex-right"> <!---- Côté droit de ma section ---->
@@ -53,10 +55,10 @@
                 </p>
                 <p>
                     Lorem ipsum odor amet, consectetuer adipiscing elit. Molestie venenatis est volutpat primis augue.
-                    Est cubilia bibendum dictum purus quis varius lacus metus sapien. 
+                    Est cubilia bibendum dictum purus quis varius lacus metus sapien.
                 </p>
                 <br>
-                <a href="#"><button class="secondary">Découvrez l'histoire du château</button></a>
+                <a href="story.html"><button class="secondary">Découvrez l'histoire du château</button></a>
             </div>
         </section>
         <!---- Petite section avec une image en parallax pour couper la page ---->
@@ -107,18 +109,18 @@
             </div>
         </section>
     </main>
-   <footer>        
+    <footer>
         <div>
             <ul>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
+                <p>Construit au XIIe siècle, le château de la RocheLambert incarne l’évolution de l’architecture
+                    médiévale, combinant des éléments défensifs robustes et un confort résidentiel croissant.</p>
             </ul>
         </div>
         <div>
-            <li><img src="img/decorations/footer_chateau_blanc.webp" alt=""></li>
+            <img src="img/decorations/footer_chateau_blanc.webp" alt="" class="decoration">
         </div>
         <div>
+            <img src="img/footer_logo_blanc.png" alt="Logo du Château de La RocheLambert" class="logo">
             <ul>
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
