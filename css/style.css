@@ -389,8 +389,9 @@ header>div>h1 {
     width: 50%;
     flex-direction: column;
     align-items: start;
+    justify-content: center;
     position: sticky; /*** Pour faire en sorte que quand je défile vers le bas mon côté droit défile mais pas le côté gauche***/
-    top: 10vh;
+    top: 50vh;
     height: 100%; /** Obligatoire si je veux que mon côté reste fixe pendant que l'autre défile**/
 }
 
