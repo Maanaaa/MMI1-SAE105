@@ -371,7 +371,7 @@ header>div>h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15vh;
+    margin-top: 10vh;
     flex-wrap: wrap;
 }
 
@@ -391,7 +391,7 @@ header>div>h1 {
     align-items: start;
     justify-content: center;
     position: sticky; /*** Pour faire en sorte que quand je défile vers le bas mon côté droit défile mais pas le côté gauche***/
-    top: 30vh;
+    top: 40%;
     height: 100%; /** Obligatoire si je veux que mon côté reste fixe pendant que l'autre défile**/
 }
 
@@ -412,6 +412,10 @@ details{
     width: 100%;
     border-radius: 15px;
     text-align: center;
+}
+
+details:hover{
+    cursor: pointer;
 }
 
 details summary{
