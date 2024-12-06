@@ -650,6 +650,10 @@ footer .socialmedia>li {
 }
 
 
+.arrowUp{
+    
+}
+
 /******* RESPONSIVE DU FOOTER *******/
 @media (max-width: 768px) {
     footer>div:nth-child(2) {
