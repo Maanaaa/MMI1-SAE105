@@ -550,11 +550,12 @@ form button{
 #patrimoine .cards{
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #patrimoine .card {
     box-shadow: none;
     text-align: start;
-    width: 30%;
+    min-width: 40%;
 
 }
 
