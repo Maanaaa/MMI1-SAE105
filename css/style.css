@@ -198,6 +198,12 @@ nav a:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
 }
 
+.patrimoine_background{
+    background-image: url("../img/header/background_patrimoine.webp");
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
+}
+
 
 
 
@@ -344,10 +350,10 @@ header>div>h1 {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    gap: 8vh;
 }
 
 .cards .card {
-    margin-left: 8vh;
     margin-top: 5vh;
     width: 45vh;
     border-radius: 20px 20px 20px 20px;
@@ -532,6 +538,24 @@ form input, textarea{
 
 form button{
     margin-top: 3vh;
+}
+
+
+/***** PAGE PATRIMOINE ****/
+#patrimoine{
+    width: 100%;
+    text-align: center;
+}
+
+#patrimoine .cards{
+    width: 100%;
+    justify-content: center;
+}
+#patrimoine .card {
+    box-shadow: none;
+    text-align: start;
+    width: 30%;
+
 }
 
 /******* FOOTER *******/
