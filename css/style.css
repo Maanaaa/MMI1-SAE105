@@ -404,7 +404,6 @@ header>div>h1 {
     width: 70%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -538,7 +537,7 @@ details summary {
 
 
 #contact{
-    margin-top: 5vh;
+    margin-top: 10vh;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -627,11 +626,16 @@ footer .socialmedia {
     /***** Icons instan tiktok.... *****/
     display: flex;
     flex-direction: row;
+    text-align: center;
+}
+
+footer p{
+    width: 70%;
 }
 
 footer>div * {
-    max-width: 70%;
-    /**** Pour que le contenu de chaque div ne prenne pas trop de place ****/
+    max-width: 100%;
+    /**** Pour que le contenu de chaque div ne prenne pas trop de place dans les divs elles-même****/
 }
 
 footer p,
@@ -650,9 +654,6 @@ footer .socialmedia>li {
 }
 
 
-.arrowUp{
-    
-}
 
 /******* RESPONSIVE DU FOOTER *******/
 @media (max-width: 768px) {
