@@ -580,7 +580,9 @@ form button{
     min-width: 40%;
 
 }
-
+.paralaxbackground{
+    background-attachment: fixed;
+}
 /******* FOOTER *******/
 footer {
     margin-top: 10vh;
