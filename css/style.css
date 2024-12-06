@@ -10,12 +10,16 @@ body {
 h1 {
     /**** Montserrat ***/
     font-family: 'Montserrat';
-    font-size: 2.125rem;
+    font-size: 2rem;
 }
 
 h2 {
     font-size: 1.5rem;
     color: #8daa91;
+}
+
+h3{
+    font-size: 1.2rem;
 }
 
 p {
@@ -227,9 +231,9 @@ header>div {
 
 header>div>h1 {
     color: white;
-    font-size: 4.25vh;
+    max-width: 100%;
     font-weight: bold;
-    margin-left: 8vh;
+    margin-left: 8vw;
     margin-bottom: 10vh;
 }
 
@@ -290,7 +294,9 @@ header>div>h1 {
     }
 
     .image-left-text-right>div {
-        width: 100%;
+        width: 90%;
+        text-align: center;
+        justify-content: center;
     }
 }
 
@@ -398,6 +404,8 @@ header>div>h1 {
     width: 70%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .flex {
@@ -424,6 +432,21 @@ header>div>h1 {
     flex-direction: column;
     align-items: center;
     height: 100%;
+}
+
+/*** FAQ RESPONSIVE ***/
+@media (max-width: 900px) {
+    #faq{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #faq>.flex {
+        width: 100%;
+        
+    }
+    #faq>.flex .flex-left {
+        position: initial;
+    }
 }
 
 details {
