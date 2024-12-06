@@ -511,8 +511,27 @@ details summary {
 #contact{
     margin-top: 5vh;
     display: flex;
-    width: 70%;
+    width: 100%;
     justify-content: center;
+    text-align: center;
+}
+
+form{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form input, textarea{
+    margin-top: 2vh;
+    border: 0.25px solid black;
+    padding: 1vh;
+    border-radius: 10px;
+}
+
+form button{
+    margin-top: 3vh;
 }
 
 /******* FOOTER *******/
