@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!---- Bibliotéque pour les icons fontawesome ---->
+    <script src="https://kit.fontawesome.com/fcb9a029a4.js" crossorigin="anonymous"></script>
+    <title>Visiter le Château</title>
+</head>
+
+<body>
+    <!---- Barre de navigation ---->
+    <nav>
+        <input type="checkbox" id="hamburger"> <!--- Formulaire pour le menu hamburger (pouvoir cliquer pour déplier)-->
+        <label for="hamburger" id="hamburger-label">=</label>
+        <!-- Quand le label est en état checked, déplier les liens-->
+        <img src="img/logo/logo_blanc.png" alt="Logo du Château de La RocheLambert">
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="story.html">Histoire</a></li>
+                <li><a href="visiter.html">Visiter</a></li>
+                <li><a href="#">Le Patrimoine Auvergnat</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!---- Header avec grande image de fond ---->
+    <header class="visit_background">
+        <div>
+            <h1>Visiter le Château de LaRocheLambert<br>Les pièces phares du château</h1>
+        </div>
+    </header>
+    <section id="rooms">
+        <div>
+            <h2>Chambre</h2>
+            <img src="img/photos_chateau/chambre.webp" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id architecto non corporis iste rem. Harum
+                hic blanditiis, saepe quis sunt laudantium quibusdam earum expedita possimus incidunt fuga, est ratione.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore at error nam deserunt quasi aspernatur,
+                repellat neque ad fugit. Deserunt similique laudantium labore in, enim quaerat iusto cupiditate officia
+                maxime?
+            </p>
+        </div>
+
+        <div>
+            <h2>Chambre</h2>
+            <img src="img/photos_chateau/chambre.webp" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id architecto non corporis iste rem. Harum
+                hic blanditiis, saepe quis sunt laudantium quibusdam earum expedita possimus incidunt fuga, est ratione.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore at error nam deserunt quasi aspernatur,
+                repellat neque ad fugit. Deserunt similique laudantium labore in, enim quaerat iusto cupiditate officia
+                maxime?
+            </p>
+        </div>
+
+        <div>
+            <h2>Chambre</h2>
+            <img src="img/photos_chateau/chambre.webp" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id architecto non corporis iste rem. Harum
+                hic blanditiis, saepe quis sunt laudantium quibusdam earum expedita possimus incidunt fuga, est ratione.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore at error nam deserunt quasi aspernatur,
+                repellat neque ad fugit. Deserunt similique laudantium labore in, enim quaerat iusto cupiditate officia
+                maxime?
+            </p>
+        </div>
+
+        <div>
+            <h2>Chambre</h2>
+            <img src="img/photos_chateau/chambre.webp" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id architecto non corporis iste rem. Harum
+                hic blanditiis, saepe quis sunt laudantium quibusdam earum expedita possimus incidunt fuga, est ratione.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore at error nam deserunt quasi aspernatur,
+                repellat neque ad fugit. Deserunt similique laudantium labore in, enim quaerat iusto cupiditate officia
+                maxime?
+            </p>
+        </div>
+    </section>
+    <!--- Effet de parallax sur une image qui a la forme d'une montagne-->
+    <div class="paralax"></div> <!--- Code trouvé sur CodePen -->
+    <section id="visit_information">
+        <div class="cards">
+            <div class="card">
+                <h2>Horaires</h2>
+                <h3>SAMEDI & DIMANCHE</h3>
+                <p>9h30 - 12h30</p>
+                <p>13h30 - 17h30</p>
+                <a href="#"><button class="third"><i class="fa-solid fa-calendar"></i> Réserver</button></a>
+            </div>
+            <div class="card">
+                <h2>Tarifs</h2>
+                <h3>Adultes</h3>
+                <p>8€</p>
+                <p>Gratuit pour les moins de 18</p>
+                <a href="#"><button class="third"><i class="fa-solid fa-calendar"></i> Réserver</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <form action="contact-form.php">
+            <label for="name">Entrez votre nom</label>
+            <input type="text"> </input>
+        </form>
+    </section>
+</body>
+
+</html>

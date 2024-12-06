@@ -47,6 +47,7 @@ button {
     border: none;
     border-radius: 25px;
     color: white;
+    font-size: 1.5vw;
 }
 
 button:hover {
@@ -104,6 +105,8 @@ nav {
     height: 12vh;
     font-size: 1.5vh;
 }
+
+
 
 nav>img {
     width: 23vh;
@@ -181,12 +184,22 @@ nav a:hover {
 }
 
 /**** HEADER *****/
+.visit_background {
+    /** Pour changer le fond selon la page **/
+    background-image: url("../img/header/background_visit.webp");
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
+}
 
-.story_background{ /** Pour changer le fond selon la page **/
+.story_background {
+    /** Pour changer le fond selon la page **/
     background-image: url("../img/header/background_story.webp");
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
 }
+
+
+
 
 header {
     z-index: 1;
@@ -229,7 +242,7 @@ header>div>h1 {
 
 /** Pour toute structure avec une image à gauche et du texte à droite**/
 
-.image-left-text-right{
+.image-left-text-right {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -253,17 +266,17 @@ header>div>h1 {
     max-width: 80%;
 }
 
-.reverse{
+.reverse {
     flex-direction: row-reverse;
 }
 
-.reverse img{
+.reverse img {
     margin-left: 10vh;
 }
 
 /** Responsive de la section **/
 @media (max-width: 768px) {
-    .image-left-text-right{
+    .image-left-text-right {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -366,7 +379,7 @@ header>div>h1 {
 }
 
 /**** Page histoire, "faq" ***/
-#faq{
+#faq {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -375,27 +388,29 @@ header>div>h1 {
     flex-wrap: wrap;
 }
 
-#faq > .flex{
+#faq>.flex {
     width: 70%;
     display: flex;
     justify-content: center;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-#faq > .flex .flex-left{
+#faq>.flex .flex-left {
     width: 50%;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    position: sticky; /*** Pour faire en sorte que quand je défile vers le bas mon côté droit défile mais pas le côté gauche***/
+    position: sticky;
+    /*** Pour faire en sorte que quand je défile vers le bas mon côté droit défile mais pas le côté gauche***/
     top: 40%;
-    height: 100%; /** Obligatoire si je veux que mon côté reste fixe pendant que l'autre défile**/
+    height: 100%;
+    /** Obligatoire si je veux que mon côté reste fixe pendant que l'autre défile**/
 }
 
-#faq > .flex .flex-right{
+#faq>.flex .flex-right {
     display: flex;
     width: 50%;
     margin-left: 10%;
@@ -405,7 +420,7 @@ header>div>h1 {
     height: 100%;
 }
 
-details{
+details {
     margin-top: 3vh;
     background-color: #ecf0f1;
     padding: 2vh;
@@ -415,15 +430,90 @@ details{
 
 }
 
-details:hover{
+details:hover {
     cursor: pointer;
 }
 
-details summary{
+details summary {
     font-weight: bold;
 }
 
 
+/**** PAGE VISITER ****/
+#rooms {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rooms div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#rooms img {
+    max-width: 60vw;
+}
+
+
+#rooms p {
+    max-width: 60vw;
+}
+
+
+.paralax {
+    margin-top: -4vh;
+    background-image: url("../img/photos_chateau/montagnes.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40vh;
+    /*** CLIP PATH DÉCOUVERT ET TROUVÉ SUR CODEPEN, permet de créer des formes, ici j'ai créé une div d'une certaine 
+    taille minimum, j'y ai mit une image de fond et ai appliqué un "découpage" grâce au clip path css pour que ma div 
+    prenne la forme d'une chaîne de montagne en partant d'une forme de polygon**/
+    clip-path: polygon(
+        0 100%, 0 60%, 
+        3% 58%, 5% 55%, 7% 58%, 10% 65%, 13% 60%, 15% 50%, 18% 60%, 20% 70%, 
+        23% 65%, 25% 55%, 28% 65%, 30% 75%, 33% 70%, 35% 60%, 38% 70%, 40% 80%, 
+        43% 75%, 45% 55%, 48% 65%, 50% 70%, 53% 65%, 55% 50%, 58% 60%, 60% 75%, 
+        63% 70%, 65% 60%, 68% 70%, 70% 85%, 73% 80%, 75% 55%, 78% 65%, 80% 70%, 
+        83% 65%, 85% 50%, 88% 65%, 90% 80%, 93% 75%, 95% 60%, 97% 65%, 100% 100%
+    );
+}
+
+#visit_information{
+    background-color: #ecf0f1;
+    padding-bottom: 8vh;
+}
+
+#visit_information .card{
+    background-color: white;
+    border-radius: 10px;
+    max-height: 40vh;
+}
+
+#visit_information button{
+    bottom: 0;
+}
+
+#visit_information .cards{
+    gap: 5vh;
+}
+
+
+#contact{
+    margin-top: 5vh;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
 
 /******* FOOTER *******/
 footer {
