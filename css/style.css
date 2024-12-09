@@ -112,7 +112,7 @@ nav {
 
 
 
-nav>img {
+nav img {
     width: 23vh;
     transition: content, 0.25s;
 }
