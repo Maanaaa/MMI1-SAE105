@@ -90,11 +90,11 @@
         </div>
     </section>
     <section id="contact">
-        <form action="contact-form.php">
+        <form action="contact-form.php" method="POST">
             <h2>Nous contacter</h2>
-            <input type="text" class="name" placeholder="Votre nom" />
-            <input type="text" class="surname" placeholder="Votre prénom" />
-            <input type="text" class="email" placeholder="Email" />
+            <input type="text" name="name" placeholder="Votre nom" />
+            <input type="text" name="surname" placeholder="Votre prénom" />
+            <input type="text" name="email" placeholder="Email" />
             <textarea name="message" rows="4" cols="50">Bonjour, je vous contacte car...</textarea>
             <button class="secondary">Envoyer</button>
         </form>
