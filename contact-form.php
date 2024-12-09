@@ -13,7 +13,7 @@ $date = date('Y-m-d H:i:s'); // Date et heure du message
 // j'écris son message dans le fichier contacts.json
 
 if (!isset($_POST['name']) || empty(trim($_POST['name'])) || !isset($_POST['surname']) || empty(trim($_POST['surname'])) || !isset($_POST['email']) || empty(trim($_POST['email'])) || !isset($_POST['message']) || empty(trim($_POST['message']))) {
-    header("Location: index.php");
+    header("Location: index.html");
     exit();
 } else {
     // Création d'un tableau avec les infos du formulaire rentrés par l'user
