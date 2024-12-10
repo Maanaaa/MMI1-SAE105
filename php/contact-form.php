@@ -28,7 +28,7 @@ $date = date('Y-m-d H:i:s'); // Date et heure du message
 // pas rentrés dans les champs du formulaire et dans ce cas là je redirige avec HEADER sur la page principale, dans le cas contraire
 // j'écris son message dans le fichier contacts.json
 
-if (!isset($_POST['name']) || empty(trim($_POST['name'])) || !isset($_POST['surname']) || empty(trim($_POST['surname'])) || !isset($_POST['email']) || empty(trim($_POST['email'])) || !isset($_POST['message']) || empty(trim($_POST['message']))) {
+if (!isset($_POST['name']) || !isset(trim($_POST['surname'])) || !isset($_POST['email']) || !isset($_POST['message'])  || !isset($_POST['cgu'])) {
     header("Location: ../index.html"); // renvoyer l'user vers la page index
     exit();
 } else {
