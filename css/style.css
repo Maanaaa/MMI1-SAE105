@@ -130,7 +130,7 @@ nav>div ul {
     display: flex;
     list-style: none;
     padding: 0;
-    margin-left:180px;
+    margin-left:-180px;
 }
 
 .nav-links li {
@@ -555,7 +555,6 @@ details summary {
     border: 0.25px solid black;
     border-radius: 25px;
     padding: 2vh;
-
 }
 
 #contact form input, textarea{
