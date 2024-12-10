@@ -112,6 +112,10 @@
             <textarea name="message" rows="4" cols="50">Bonjour, je vous contacte car...</textarea>
             <button class="secondary">Envoyer</button>
         </form>
+        <!-- Affichage du message quand le formulaire a bien été envoyé -->
+        <?php if (!empty($infoMessage)): ?>
+            <p class="info"><?php echo $infoMessage; ?></p>
+        <?php endif; ?>
     </section>
     <footer>
         <div>
