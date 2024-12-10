@@ -364,7 +364,7 @@ header>div>h1 {
     margin-top: 5vh;
     width: 45vh;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: #8daa91 1px 5px 5px;
+    box-shadow: #2a7634d7 1px 5px 5px;
     margin-top: 8vh;
     height: 60vh;
     /** Pour toutes les modifications que j'effectuerai avec un :hover par exemple, il y aura une petite transition de 0.25s entre la propriété par défaut et la nouvelle **/
