@@ -45,9 +45,11 @@
     <main>
         <!--- Mini section de séparation avec effet de parallax -->
         <div class="discoveringtransition">
-            <!--- J'ai créé différentes class pour mes boutons, primaire secondaire et tertiaire, qui ont tous les trois
-            des styles différents, afin de pouvoir les réutiliser rapidement à plusieurs reprises. --->
-            <a href="#events"><button class="primary">Les événements phares</button></a>
+            <!---J'ai créé différentes class pour mes boutons, primaire secondaire et tertiaire, qui ont tous les trois
+            des styles différents, afin de pouvoir les réutiliser rapidement à plusieurs reprises. Je ne voulais pas utiliser
+            de a href avec un bouton dedans car cela n'est pas valide pour le test W3C, le moyen le plus simple que j'ai trouvé est
+            d'utiliser la balise form suivie de mes boutons--->
+            <form action="#events"><button class="primary">Les événements phares</button></form>
         </div>
         <!-- Première partie du site, présentation du château. Structuré avec les flex comme toutes les pages-->
         <section class="image-left-text-right">
@@ -71,7 +73,7 @@
                     n’est pas seulement un monument historique, mais un voyage immersif dans le temps.
                 </p>
                 <br>
-                <a href="story.html"><button class="secondary">Découvrez l'histoire du château</button></a>
+                <form action="story.html"><button class="secondary">Découvrez l'histoire du château</button></form>
             </div>
         </section>
         <!---- Petite section avec une image en parallax pour séparer la page, que je peux réutiliser plusieurs fois ---->
@@ -101,7 +103,7 @@
                     <img src="img/events/halloween.webp" alt="Faites ">
                     <h3>Halloween au château</h3>
                     <p>31/10/24</p>
-                    <a href="#"><button class="third"><i class="fa-solid fa-calendar"></i> Participer</button></a>
+                    <form action="#"><button class="third"><i class="fa-solid fa-calendar"></i> Participer</button></form>
                     <!-- les icons fa-... viennent de la biblioétique fontawesome -->
                 </div>
                 <!-- Seconde card -->
@@ -110,7 +112,8 @@
                         alt="Décorations effrayantes illuminées au Château de la RocheLambert pour l'événement Halloween, avec des citrouilles sculptées et des toiles d'araignée.">
                     <h3>Un Noël un peu spécial</h3>
                     <p>23/12/24</p>
-                    <a href="#"><button class="third"><i class="fa-solid fa-calendar"></i> Participer</button></a>
+                    <form action="#"></form><button class="third"><i class="fa-solid fa-calendar"></i>
+                        Participer</button></form>
                 </div>
                 <!-- Troisième card -->
                 <div class="card">
@@ -118,7 +121,8 @@
                         alt="Salle de réception du Château de la RocheLambert décorée pour Noël, avec un énorme sapin orné de lumières scintillantes et de boules colorées.">
                     <h3>Exposition de poterie ancienne</h3>
                     <p>08/01/25</p>
-                    <a href="#"><button class="third"><i class="fa-solid fa-calendar"></i> Participer</button></a>
+                    <form action="#"></form><button class="third"><i class="fa-solid fa-calendar"></i>
+                        Participer</button></form>
                 </div>
                 <!-- Quatrième card -->
                 <div class="card">
@@ -126,7 +130,8 @@
                         alt="Collection de poteries anciennes exposées au Château de la RocheLambert, montrant des vases et des urnes magnifiquement sculptés.">
                     <h3>Visite historique déguisés</h3>
                     <p>15/04/25</p>
-                    <a href="#"><button class="third"><i class="fa-solid fa-calendar"></i> Participer</button></a>
+                    <form action="#"></form><button class="third"><i class="fa-solid fa-calendar"></i>
+                        Participer</button></form>
                 </div>
             </div>
         </section>

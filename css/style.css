@@ -366,7 +366,7 @@ header>div>h1 {
     border-radius: 20px 20px 20px 20px;
     box-shadow: #8daa91 1px 5px 5px;
     margin-top: 8vh;
-    height: 55vh;
+    height: 60vh;
     /** Pour toutes les modifications que j'effectuerai avec un :hover par exemple, il y aura une petite transition de 0.25s entre la propriété par défaut et la nouvelle **/
 }
 
@@ -547,27 +547,27 @@ details summary {
     text-align: center;
 }
 
-form{
+#contact form{
     width: 25%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-form input, textarea{
+#contact form input, textarea{
     margin-top: 2vh;
     border: 0.25px solid black;
     padding: 1vh;
     border-radius: 10px;
 }
 
-form label{
+#contact form label{
     font-size: 0.8rem;
     text-align: start;
     margin-top: 1vh;
 }
 
-form button{
+#contact form button{
     margin-top: 3vh;
 }
 
