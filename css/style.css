@@ -130,7 +130,7 @@ nav>div ul {
     display: flex;
     list-style: none;
     padding: 0;
-    margin-left: -180px;
+    margin-left:180px;
 }
 
 .nav-links li {
@@ -190,20 +190,20 @@ nav a:hover {
     /** Pour changer le fond selon la page **/
     background-image: url("../img/header/background_visit.webp");
     background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset; /** Ombre interne en bas du header, pour que le texte en blanc soit mieux visible, en noir avec 35% d'opacité **/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px180px 186px58px inset; /** Ombre interne en bas du header, pour que le texte en blanc soit mieux visible, en noir avec 35% d'opacité **/
 }
 
 .story_background {
     /** Pour changer le fond selon la page **/
     background-image: url("../img/header/background_story.webp");
     background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset; /** Ombre interne en bas du header, pour que le texte en blanc soit mieux visible, en noir avec 35% d'opacité **/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px180px 186px58px inset; /** Ombre interne en bas du header, pour que le texte en blanc soit mieux visible, en noir avec 35% d'opacité **/
 }
 
 .patrimoine_background{
     background-image: url("../img/header/background_patrimoine.webp");
     background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset; /** Ombre interne en bas du header, pour que le texte en blanc soit mieux visible, en noir avec 35% d'opacité**/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px180px 186px58px inset; /** Ombre interne en bas du header, pour que le texte en blanc soit mieux visible, en noir avec 35% d'opacité**/
 }
 
 
@@ -217,7 +217,7 @@ header {
     height: 100vh;
     /*** L'utilisation de / pour center / cover permet de concatainer des instruction dans une seule et même ligne, cela m'évite de faire une autre ligne pour faire background-size: cover; ***/
     background: url("../img/header/background_index.webp") no-repeat center / cover;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px180px 186px58px inset;
     /*** Trouvé sur W3School : Ombre intérieur du bas vers le haut avec 35% d'opacité dans le header pour que le texte sur l'image de fond de header soit lisible **/
 }
 
@@ -245,7 +245,7 @@ header>div>h1 {
 }
 
 .discoveringtransition button {
-    margin-top: -3vh;
+    margin-top:3vh;
 }
 
 /** Pour toute structure avec une image à gauche et du texte à droite**/
@@ -348,7 +348,7 @@ header>div>h1 {
 }
 
 #events p {
-    margin-top: -2vh;
+    margin-top:2vh;
 }
 
 .cards {
@@ -499,7 +499,7 @@ details summary {
 
 
 .paralax {
-    margin-top: -4vh;
+    margin-top:4vh;
     background-image: url("../img/photos_chateau/montagnes.webp");
     background-size: cover;
     background-position: top;
@@ -624,7 +624,7 @@ footer>div {
 footer .decoration {
     /***** Chateau blanc au milieu deu footer***/
     max-width: 100%;
-    margin-top: -8vh;
+    margin-top:8vh;
 }
 
 footer .logo {
