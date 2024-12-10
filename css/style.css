@@ -245,7 +245,7 @@ header>div>h1 {
 }
 
 .discoveringtransition button {
-    margin-top:3vh;
+    margin-top:-3vh;
 }
 
 /** Pour toute structure avec une image à gauche et du texte à droite**/
