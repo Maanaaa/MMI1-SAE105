@@ -547,7 +547,7 @@ details summary {
     text-align: center;
 }
 
-#contact form{
+#contact form fieldset{
     width: 25%;
     display: flex;
     justify-content: center;
