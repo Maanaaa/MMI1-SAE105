@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <!--Polices Montserrat et Poppins, par l'API Google-->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
-    <meta name="author" content="MANYA Théo"> 
-    <meta name="description" content="Site web pour l'époque Médiéval, illustré par le Château de La RocheLambert. Dans le cadre d'une SAE à l'IUT du Puy-en-Velay en 2024. ">
+    <meta name="author" content="MANYA Théo">
+    <meta name="description"
+        content="Site web pour l'époque Médiéval, illustré par le Château de La RocheLambert. Dans le cadre d'une SAE à l'IUT du Puy-en-Velay en 2024. ">
     <!---- Bibliotéque pour les icons fontawesome ---->
     <script src="https://kit.fontawesome.com/fcb9a029a4.js" crossorigin="anonymous"></script>
     <title>La RocheLambert - Histoire</title>
@@ -30,13 +32,18 @@
             </ul>
         </div>
     </nav>
-    <!---- Header avec grande image de fond ---->
+    <!---- 
+    Header avec grande image de fond
+    Plusieurs class existent pour changer le fond du header en fonction de la page.
+    ---->
     <header class="story_background">
         <div>
             <h1>Histoire</h1>
         </div>
     </header>
     <main>
+        <!-- Grande section avec à chaque fois une image et une description qui correspond à une date, à chaque fois j'alterne
+         entre image à gauche, texte à droite et texte à gauche image à droite-->
         <section id="dates">
             <div class="image-left-text-right">
                 <div class="flex-left"> <!---- Côté gauche de ma section ---->
@@ -170,6 +177,8 @@
             </div>
         </section>
         <div class="transition story_background"></div>
+        <!-- Section avec à gauche un texte, et à droite différents points clés sur le château
+         sous forme de menu déroulant -->
         <section id="faq">
             <div class="flex">
                 <div class="flex-left">
@@ -182,13 +191,17 @@
                     </p>
                     <button class="third"><a href="visiter.html">Visiter</a></button>
                 </div>
-                <!-- J'ai trouvé comment créer cette section sous forme d'acordéons sur dev.to "Let's Create an FAQ section with HTML and CSS only (detail tag explained)" -->
+                <!-- J'ai trouvé comment créer cette section sous forme d'acordéons sur dev.to 
+                 "Let's Create an FAQ section with HTML and CSS only (detail tag explained)" -->
                 <div class="flex-right"> <!--- Partie droite -->
                     <details>
                         <!--- Première question, avec la balise détails je peux créer cette petite box et y afficher la question et la réponse -->
                         <summary>Elements architecturaux</summary>
                         <div>
-                            Le château présente une architecture médiévale typique avec ses tours et murs massifs. Construit pour la défense, il inclut des meurtrières et des créneaux, reflétant les besoins militaires de l'époque. Ses matériaux et styles témoignent de l'évolution des techniques de construction.
+                            Le château présente une architecture médiévale typique avec ses tours et murs massifs.
+                            Construit pour la défense, il inclut des meurtrières et des créneaux, reflétant les besoins
+                            militaires de l'époque. Ses matériaux et styles témoignent de l'évolution des techniques de
+                            construction.
                         </div>
                     </details>
                     <!--- Deuxième question-->
@@ -196,21 +209,27 @@
                         <!--- Première question, avec la balise détails je peux créer cette petite box et y afficher la question et la réponse -->
                         <summary>Rôle Historique et Stratégique</summary>
                         <div>
-                            Situé à un point stratégique, le château a contrôlé des routes clés et servi de refuge pendant les conflits. Il symbolisait le pouvoir des seigneurs locaux, assurant leur influence sur la région à travers les siècles.
+                            Situé à un point stratégique, le château a contrôlé des routes clés et servi de refuge
+                            pendant les conflits. Il symbolisait le pouvoir des seigneurs locaux, assurant leur
+                            influence sur la région à travers les siècles.
                         </div>
                     </details>
                     <details>
                         <!--- Première question, avec la balise détails je peux créer cette petite box et y afficher la question et la réponse -->
                         <summary>Vie Quotidienne au Moyen Âge</summary>
                         <div>
-                            Au-delà de sa fonction défensive, le château était un lieu de vie animé. Les salles accueillaient banquets et cérémonies, tandis que les cuisines et jardins assuraient la subsistance. La vie au château reflétait les structures sociales de l'époque.
+                            Au-delà de sa fonction défensive, le château était un lieu de vie animé. Les salles
+                            accueillaient banquets et cérémonies, tandis que les cuisines et jardins assuraient la
+                            subsistance. La vie au château reflétait les structures sociales de l'époque.
                         </div>
                     </details>
                     <details>
                         <!--- Première question, avec la balise détails je peux créer cette petite box et y afficher la question et la réponse -->
                         <summary>Évolutions et Transformations</summary>
                         <div>
-                            Avec le temps, le château a été rénové pour répondre aux besoins de ses occupants. Des éléments Renaissance ont adouci son aspect, tandis que les restaurations modernes préservent son héritage, offrant un aperçu tangible de son histoire.
+                            Avec le temps, le château a été rénové pour répondre aux besoins de ses occupants. Des
+                            éléments Renaissance ont adouci son aspect, tandis que les restaurations modernes préservent
+                            son héritage, offrant un aperçu tangible de son histoire.
                         </div>
                     </details>
 

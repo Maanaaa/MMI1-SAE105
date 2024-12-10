@@ -1,4 +1,5 @@
 <?php
+// Je récupère chaque info rentré dans le formulaire pour pouvoir manipuler les données plus facilement après
 $name = htmlspecialchars($_POST['name']);
 $surname = htmlspecialchars($_POST['surname']);
 $email = htmlspecialchars($_POST['email']);
@@ -13,7 +14,7 @@ $date = date('Y-m-d H:i:s'); // Date et heure du message
 // j'écris son message dans le fichier contacts.json
 
 if (!isset($_POST['name']) || empty(trim($_POST['name'])) || !isset($_POST['surname']) || empty(trim($_POST['surname'])) || !isset($_POST['email']) || empty(trim($_POST['email'])) || !isset($_POST['message']) || empty(trim($_POST['message']))) {
-    header("Location: index.html");
+    header("Location: index.html"); // renvoyer l'user vers la page index
     exit();
 } else {
     // Création d'un tableau avec les infos du formulaire rentrés par l'user

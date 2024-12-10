@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Patrimoine Auvergnat</title>
     <link rel="stylesheet" href="css/style.css">
+    <!--Polices Montserrat et Poppins, par l'API Google-->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
-    <meta name="author" content="MANYA Théo"> 
-    <meta name="description" content="Site web pour l'époque Médiéval, illustré par le Château de La RocheLambert. Dans le cadre d'une SAE à l'IUT du Puy-en-Velay en 2024. ">
+    <meta name="author" content="MANYA Théo">
+    <meta name="description"
+        content="Site web pour l'époque Médiéval, illustré par le Château de La RocheLambert. Dans le cadre d'une SAE à l'IUT du Puy-en-Velay en 2024. ">
     <!---- Bibliotéque pour les icons fontawesome ---->
     <script src="https://kit.fontawesome.com/fcb9a029a4.js" crossorigin="anonymous"></script>
 </head>
@@ -31,36 +33,51 @@
             </ul>
         </div>
     </nav>
+    <!---- 
+    Header avec grande image de fond
+    Plusieurs class existent pour changer le fond du header en fonction de la page.
+    ---->
     <header class="patrimoine_background  paralaxbackground">
         <div>
             <h1>Le Patrimoine Auvergnat</h1>
         </div>
     </header>
     <main>
+        <!-- Section avec la présentation de château d'Auvergne -->
         <section id="patrimoine">
+            <!--- Réutilisation des cards des événements de la page index.html -->
             <div class="cards">
+                <!-- Premier château -->
                 <div class="card">
-                    <img src="img/patrimoine/murol.webp" alt="abcdefghijklmnopqrstuvwxyz">
+                    <img src="img/patrimoine/murol.webp"
+                        alt="Château de Murol en Auvergne, France, sur une colline verdoyante – patrimoine médiéval">
                     <h3>Château de Murol</h3>
                     <p>Rue du Château, 63790 Murol</p>
                 </div>
+                <!-- Second château -->
                 <div class="card">
-                    <img src="img/patrimoine/val.webp" alt="abcdefghijklmnopqrstuvwxyz">
+                    <img src="img/patrimoine/val.webp"
+                        alt="Château de Val au bord d'un lac en Auvergne, France – architecture historique et nature">
                     <h3>Château de Val</h3>
                     <p>Les Fontilles, 15270 Lanobre</p>
                 </div>
+                <!-- Troisième château -->
                 <div class="card">
-                    <img src="img/patrimoine/ravel.webp" alt="abcdefghijklmnopqrstuvwxyz">
+                    <img src="img/patrimoine/ravel.webp"
+                        alt="Château de Ravel avec jardins à la française en Auvergne, France – monument historique">
                     <h3>Château de Ravel</h3>
                     <p>Château de Ravel, 63190 Ravel</p>
                 </div>
+                <!-- Quatrième château -->
                 <div class="card">
-                    <img src="img/patrimoine/chazeron.webp" alt="abcdefghijklmnopqrstuvwxyz">
+                    <img src="img/patrimoine/chazeron.webp"
+                        alt="Château de Chazeron entouré de forêt en Auvergne, France – forteresse médiévale">
                     <h3>Château de Chazeron</h3>
                     <p>Chazeron, 63410 Loubeyrat</p>
                 </div>
             </div>
-                <button class="secondary"><a href="https://www.auvergne-destination.com" target="_blank">Découvrir plus de châteaux en Auvergne</a></button>
+            <button class="secondary"><a href="https://www.auvergne-destination.com" target="_blank">Découvrir plus de
+                    châteaux en Auvergne</a></button>
         </section>
     </main>
     <footer>

@@ -4,7 +4,6 @@ body {
     padding: 0;
     font-family: 'Poppins';
     /*** Poppins ***/
-    max-width: 100%;
 }
 
 h1 {
@@ -31,18 +30,22 @@ a {
     color: white;
 }
 
-
+/** Petite section avec effet de fond en paralax que je dispose dans mes différentes pages, 
+je peux changer l'image de fond grâce aux classes se trouvant dans mon css dans header 
+(.visit_background .story_background, .patrimoine_background) */
 .transition {
     margin-top: 10vh;
     height: 20vh;
     position: relative;
-    background-image: url('../img/photos_chateau/chateau_transition.webp');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #8daa91 url('../img/photos_chateau/chateau_transition.webp') no-repeat center / cover;
     background-attachment: fixed;
-    background-color: #8daa91;
 }
+
+* {
+    transition: all 0.25s ease-in-out;
+}
+
+/***** BOUTONS *****/
 
 /***** BOUTONS *****/
 
@@ -52,54 +55,53 @@ button {
     border-radius: 25px;
     color: white;
     font-size: 1.5vw;
-}
-
-button:hover {
     cursor: pointer;
 }
 
-.primary {
-    background-color: #d16d4e;
-    transition: all, 0.25s;
+button.primary,
+button.secondary,
+button.third {
     font-size: 0.9em;
+    transition: transform 0.25s ease;
 }
 
-.primary:hover {
-    background-color: #8daa91;
-    transform: scaleX(1.05);
+button.primary {
+    background-color: #d16d4e;
 }
 
-.secondary {
+button.primary:hover {
     background-color: #8daa91;
-    transition: all, 0.25s;
+    transform: scale(1.05, 1.05);
+}
+
+button.secondary {
+    background-color: #8daa91;
     padding: 2.25vh;
-    font-size: 0.9em;
 }
 
-.secondary:hover {
+button.secondary:hover {
     background-color: #d16d4e;
-    transform: scaleY(1.05);
+    transform: scale(1.05, 1.05);
 }
 
-.third {
+button.third {
     background-color: #d16d4e;
     padding: 2vh;
-    font-size: 0.9em;
-    transition: all, 0.25s;
 }
 
-.third:hover {
+button.third:hover {
     background-color: #8daa91;
     transform: scaleX(1.01);
 }
 
 /******* NAVBAR *******/
 nav {
+    /** Flexbox avec les éléments espacés les uns des autres, centré **/
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    z-index: 2;
+    z-index: 2; /** /*** z-index = équivalent de calque, ici pour être sûr que la barre de navigation se place bien au dessus du header **/
     position: fixed;
     max-width: 100%;
     width: 100%;
@@ -114,11 +116,11 @@ nav {
 
 nav img {
     width: 23vh;
-    transition: content, 0.25s;
 }
 
 
 nav>div {
+    /* Flexbox centrée, avec des tailles équitable pour chaque div (flex: 1 équivalent de flex-grow */
     flex: 1;
     display: flex;
     justify-content: center;
@@ -135,10 +137,6 @@ nav>div ul {
     margin: 0 10px;
 }
 
-nav a {
-    transition: all, 0.25s;
-}
-
 nav a:hover {
     color: #ecf0f1;
 }
@@ -146,7 +144,7 @@ nav a:hover {
 /******* MENU BURGER POUR TÉLÉPHONES *******/
 
 #hamburger {
-    display: none;
+    display: none; /** L'état de base est invisible, je le rend visible plus tard ave les media queries*/
 }
 
 #hamburger-label {
@@ -155,9 +153,9 @@ nav a:hover {
     color: #ecf0f1;
     font-size: 4.25vh;
     padding: 10px;
-    position: relative;
+    position: relative; /* La position de mon bouton hambuger est relative à la barre de navigation */
     z-index: 3;
-    /* pour que mon burger soit au dessus des autres éléments en haut de ma page */
+    /* pour que mon burger soit au dessus des autres éléments (header < nav < hamburger) en haut de ma page */
     max-width: 100%;
 }
 
@@ -192,20 +190,20 @@ nav a:hover {
     /** Pour changer le fond selon la page **/
     background-image: url("../img/header/background_visit.webp");
     background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset; /** Ombre interne en bas du header, pour que le texte en blanc soit mieux visible, en noir avec 35% d'opacité **/
 }
 
 .story_background {
     /** Pour changer le fond selon la page **/
     background-image: url("../img/header/background_story.webp");
     background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset; /** Ombre interne en bas du header, pour que le texte en blanc soit mieux visible, en noir avec 35% d'opacité **/
 }
 
 .patrimoine_background{
     background-image: url("../img/header/background_patrimoine.webp");
     background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset; /** Ombre interne en bas du header, pour que le texte en blanc soit mieux visible, en noir avec 35% d'opacité**/
 }
 
 
@@ -213,12 +211,12 @@ nav a:hover {
 
 header {
     z-index: 1;
-    /*** z-index = équivalent de calque, en l'occurence mon header passe en dessous des autres éléments **/
+    /*** z-index = équivalent de calque, en l'occurence mon header passe en dessous de la barre de navigation **/
     max-width: 100%;
     width: 100%;
     height: 100vh;
-    background-image: url("../img/header/background_index.webp");
-    background-size: cover;
+    /*** L'utilisation de / pour center / cover permet de concatainer des instruction dans une seule et même ligne, cela m'évite de faire une autre ligne pour faire background-size: cover; ***/
+    background: url("../img/header/background_index.webp") no-repeat center / cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -180px 186px -58px inset;
     /*** Trouvé sur W3School : Ombre intérieur du bas vers le haut avec 35% d'opacité dans le header pour que le texte sur l'image de fond de header soit lisible **/
 }
@@ -251,18 +249,19 @@ header>div>h1 {
 }
 
 /** Pour toute structure avec une image à gauche et du texte à droite**/
-
 .image-left-text-right {
+    /** Flexbox centrée **/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto; /** Me permet de centrer **/
     /** Centrer hrozontalement **/
     margin-top: 8vh;
 }
 
 .flex-left {
+    /** Flexbox centrée **/
     width: 40%;
     display: flex;
     align-items: center;
@@ -277,7 +276,7 @@ header>div>h1 {
 }
 
 .reverse {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /** Affiché en ligne mais inverser droite et gauche **/
 }
 
 .reverse img {
@@ -305,6 +304,7 @@ header>div>h1 {
 /** Section 2 Galerie de quelques images **/
 
 #medieval {
+    /** Flexbox en colonne **/
     width: 100%;
     margin-top: 15vh;
     text-align: center;
@@ -315,6 +315,7 @@ header>div>h1 {
 }
 
 .galerie {
+    /** Flexbox en ligne **/
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -327,18 +328,18 @@ header>div>h1 {
     height: 35vh;
     padding: 1vh;
     margin: 3vh;
-    transition: all, 0.25s;
 }
 
 .galerie>div:hover img {
     transform: scale(1.1, 1.1);
-    /** Faire un effet "zoom" quand on passe la souris sur une des images **/
+    /** Faire un effet "zoom" de 1.1x quand on passe la souris sur une des images **/
     border-radius: 25px;
 }
 
 
 /**** LISTE DES ÉVÉNEMENTS */
 #events {
+    /** Flexbox en colonne, aligné au centre**/
     margin-top: 8vh;
     display: flex;
     flex-direction: column;
@@ -356,7 +357,7 @@ header>div>h1 {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    gap: 8vh;
+    gap: 8vh; /** Permet un espacement entre chaque éléments dans cards **/
 }
 
 .cards .card {
@@ -366,7 +367,6 @@ header>div>h1 {
     box-shadow: #8daa91 1px 5px 5px;
     margin-top: 8vh;
     height: 55vh;
-    transition: all, 0.25s;
     /** Pour toutes les modifications que j'effectuerai avec un :hover par exemple, il y aura une petite transition de 0.25s entre la propriété par défaut et la nouvelle **/
 }
 
@@ -392,6 +392,7 @@ header>div>h1 {
 
 /**** Page histoire, "faq" ***/
 #faq {
+    /** Flexbox, en ligne, centré**/
     width: 100%;
     display: flex;
     justify-content: center;
@@ -412,6 +413,7 @@ header>div>h1 {
 }
 
 #faq>.flex .flex-left {
+    /** Flexbox en colonne, centré verticalement, à gauche**/
     width: 50%;
     flex-direction: column;
     align-items: start;
@@ -420,10 +422,10 @@ header>div>h1 {
     /*** Pour faire en sorte que quand je défile vers le bas mon côté droit défile mais pas le côté gauche***/
     top: 40%;
     height: 100%;
-    /** Obligatoire si je veux que mon côté reste fixe pendant que l'autre défile**/
 }
 
 #faq>.flex .flex-right {
+    /** Flexbox en ligne, au centré, aligné verticalement au centre**/
     display: flex;
     width: 50%;
     margin-left: 10%;
@@ -434,7 +436,8 @@ header>div>h1 {
 }
 
 /*** FAQ RESPONSIVE ***/
-@media (max-width: 900px) {
+/** Pour les téléphones**/
+@media (max-width: 768pxpx) {
     #faq{
         width: 100%;
         flex-wrap: wrap;
@@ -558,6 +561,12 @@ form input, textarea{
     border-radius: 10px;
 }
 
+form label{
+    font-size: 0.8rem;
+    text-align: start;
+    margin-top: 1vh;
+}
+
 form button{
     margin-top: 3vh;
 }
@@ -652,7 +661,6 @@ footer .socialmedia>li {
     border-radius: 75px;
     background-color: #8daa91;
     margin: 10px;
-    transition: all, 0.25s;
 }
 
 
