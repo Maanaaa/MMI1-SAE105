@@ -552,6 +552,10 @@ details summary {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border: 0.25px solid black;
+    border-radius: 25px;
+    padding: 2vh;
+
 }
 
 #contact form input, textarea{
@@ -561,7 +565,7 @@ details summary {
     border-radius: 10px;
 }
 
-#contact form label{
+#contact form fieldset label{
     font-size: 0.8rem;
     text-align: start;
     margin-top: 1vh;

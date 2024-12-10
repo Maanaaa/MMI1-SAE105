@@ -109,15 +109,13 @@
                 <input type="text" name="surname" placeholder="Votre prénom" required />
                 <label for="name">Email</label>
                 <input type="text" name="email" placeholder="Email" required />
+                <label for="accept">J'accepte que mes données soient stockés sur les serveurs</label>
+                <input type="checkbox" name="check" id="cgu" required>
                 <label for="name">Message</label>
-                <textarea name="message" rows="4" cols="50">Bonjour, je vous contacte car...</textarea>
+                <textarea name="message" rows="4" cols="50" required>Bonjour, je vous contacte car...</textarea>
+                <button class="secondary">Envoyer</button>
             </fieldset>
-            <button class="secondary">Envoyer</button>
         </form>
-                <!-- Affichage du message PHP -->
-                <?php if (!empty($messageToDisplay)): ?>
-                <p class="message"><?php echo $messageToDisplay; ?></p>
-            <?php endif; ?>
     </section>
     <footer>
         <div>
