@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!--Polices Montserrat et Poppins, par l'API Google-->
+    <!---Polices Montserrat et Poppins, par l'API Google--->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
     <meta name="author" content="MANYA Théo">
     <meta name="description"
         content="Site web pour l'époque Médiéval, illustré par le Château de La RocheLambert. Dans le cadre d'une SAE à l'IUT du Puy-en-Velay en 2024. ">
-    <!---Bibliotéque pour les icons fontawesome--->
+    <!----Bibliotéque pour les icons fontawesome---->
     <script src="https://kit.fontawesome.com/fcb9a029a4.js" crossorigin="anonymous"></script>
     <title>L'époque médiévale au Château de La RocheLambert</title>
 </head>
 
 <body>
-    <!---Barre de navigation--->
+    <!----Barre de navigation---->
     <nav id="top">
-        <input type="checkbox" id="hamburger"> <!--Formulaire pour le menu hamburger (pouvoir cliquer pour déplier)-->
+        <input type="checkbox" id="hamburger"> <!---Formulaire pour le menu hamburger (pouvoir cliquer pour déplier)--->
         <label for="hamburger" id="hamburger-label">=</label>
-        <!-Quand le label est en état checked, déplier les liens-->
+        <!---Quand le label est en état checked, déplier les liens--->
         <a href="index.html"><img src="img/logo/logo_blanc.png" alt="Logo du Château de La RocheLambert"></a>
         <div>
             <ul class="nav-links">
@@ -33,30 +33,30 @@
             </ul>
         </div>
     </nav>
-    <!---
+    <!----
     Header avec grande image de fond
     Plusieurs class existent pour changer le fond du header en fonction de la page.
-   --->
+   ---->
     <header>
         <div>
             <h1>Le Château de La RocheLambert,<br> à la découverte de l'époque médiévale</h1>
         </div>
     </header>
     <main>
-        <!--Mini section de séparation avec effet de parallax->
+        <!---Mini section de séparation avec effet de parallax--->
         <div class="discoveringtransition">
-            <!---J'ai créé différentes class pour mes boutons, primaire secondaire et tertiaire, qui ont tous les trois
+            <!----J'ai créé différentes class pour mes boutons, primaire secondaire et tertiaire, qui ont tous les trois
             des styles différents, afin de pouvoir les réutiliser rapidement à plusieurs reprises. Je ne voulais pas utiliser
             de a href avec un bouton dedans car cela n'est pas valide pour le test W3C, le moyen le plus simple que j'ai trouvé est
-            d'utiliser la balise form suivie de mes boutons--->
+            d'utiliser la balise form suivie de mes boutons---->
             <form action="#events"><button class="primary">Les événements phares</button></form>
         </div>
-        <!-Première partie du site, présentation du château. Structuré avec les flex comme toutes les pages-->
+        <!---Première partie du site, présentation du château. Structuré avec les flex comme toutes les pages--->
         <section class="image-left-text-right">
-            <div class="flex-left"> <!---Côté gauche de ma section--->
+            <div class="flex-left"> <!----Côté gauche de ma section---->
                 <img src="img/photos_chateau/entree_chateau.webp" alt="Photo de l'entrée du château de La RocheLambert">
             </div>
-            <div class="flex-right"> <!---Côté droit de ma section--->
+            <div class="flex-right"> <!----Côté droit de ma section---->
                 <h2>Depuis 1150</h2>
                 <p>Construit au XIIe siècle, le château de la RocheLambert incarne l’évolution de l’architecture
                     médiévale, combinant des éléments défensifs robustes et un confort résidentiel croissant.
@@ -76,9 +76,9 @@
                 <form action="story.html"><button class="secondary">Découvrez l'histoire du château</button></form>
             </div>
         </section>
-        <!---Petite section avec une image en parallax pour séparer la page, que je peux réutiliser plusieurs fois--->
+        <!----Petite section avec une image en parallax pour séparer la page, que je peux réutiliser plusieurs fois---->
         <div class="transition"></div>
-        <!-Section avec pour trois pièces du château: une image pour chaque pièces-->
+        <!---Section avec pour trois pièces du château: une image pour chaque pièces--->
         <section id="medieval">
             <h2>Plongée dans le Moyen Âge</h2>
             <div class="galerie">
@@ -93,65 +93,66 @@
                 </div>
             </div>
         </section>
-        <!---Liste des activités proposés au château sous forme de cards--->
+        <!----Liste des activités proposés au château sous forme de cards---->
         <section id="events">
             <h2>Événements et activités</h2>
             <p>Participez à nos événements immersifs et <br>découvrez la richesse du Moyen Âge.</p>
-            <!-Première card->
+            <!---Première card--->
             <div class="cards">
                 <div class="card">
                     <img src="img/events/halloween.webp" alt="Faites ">
                     <h3>Halloween au château</h3>
                     <p>31/10/24</p>
-                    <form action="#"><button class="third"><i class="fa-solid fa-calendar"></i> Participer</button></form>
-                    <!-les icons fa-... viennent de la biblioétique fontawesome->
+                    <form action="#"><button class="third"><i class="fa-solid fa-calendar"></i> Participer</button>
+                    </form>
+                    <!---les icons fa-... viennent de la biblioétique fontawesome--->
                 </div>
-                <!-Seconde card->
+                <!---Seconde card--->
                 <div class="card">
                     <img src="img/events/noel_au_chateau.avif"
                         alt="Décorations effrayantes illuminées au Château de la RocheLambert pour l'événement Halloween, avec des citrouilles sculptées et des toiles d'araignée.">
                     <h3>Un Noël un peu spécial</h3>
                     <p>23/12/24</p>
                     <form action="#"><button class="third"><i class="fa-solid fa-calendar"></i>
-                        Participer</button></form>
+                            Participer</button></form>
                 </div>
-                <!-Troisième card->
+                <!---Troisième card--->
                 <div class="card">
                     <img src="img/events/poterie.webp"
                         alt="Salle de réception du Château de la RocheLambert décorée pour Noël, avec un énorme sapin orné de lumières scintillantes et de boules colorées.">
                     <h3>Exposition de poterie ancienne</h3>
                     <p>08/01/25</p>
                     <form action="#"><button class="third"><i class="fa-solid fa-calendar"></i>
-                        Participer</button></form>
+                            Participer</button></form>
                 </div>
-                <!-Quatrième card->
+                <!--Quatrième card-->
                 <div class="card">
                     <img src="img/events/visite_historique.webp"
                         alt="Collection de poteries anciennes exposées au Château de la RocheLambert, montrant des vases et des urnes magnifiquement sculptés.">
                     <h3>Visite historique déguisés</h3>
                     <p>15/04/25</p>
                     <form action="#"><button class="third"><i class="fa-solid fa-calendar"></i>
-                        Participer</button></form>
+                            Participer</button></form>
                 </div>
             </div>
         </section>
     </main>
-    <!-Footer en flex->
+    <!--Footer en flex-->
     <footer>
-        <!--Contenu de gauche->
+        <!---Contenu de gauche--->
         <div>
             <img src="img/logo/logo_blanc.png" alt="Logo du Château de La RocheLambert" class="logo">
             <p>Construit au XIIe siècle, le château de la RocheLambert incarne l’évolution de l’architecture
                 médiévale, combinant des éléments défensifs robustes et un confort résidentiel croissant.
             </p>
         </div>
-        <!--Contenu central->
+        <!---Contenu central--->
         <div>
             <img src="img/decorations/footer_chateau_blanc.webp" alt="" class="decoration">
-            <!-Masqué pour les versions mobiles-->
+            <!--Masqué pour les versions mobiles--->
         </div>
         <div>
-            <!--Contenu de droite->
+            <!---Contenu de droite--->
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="story.html">Histoire</a></li>
